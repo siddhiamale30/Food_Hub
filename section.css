@@ -1,0 +1,33 @@
+header{
+text-align:center;
+font-size:35px;
+padding:20px;
+background-color:tomato;
+color:black;
+border-top: 3px solid black;
+}
+
+body{
+border:4px dotted black;
+padding:20px 30px;
+top-margin:2px;
+background-color:bisque;
+}
+
+div{
+padding:30px;
+border:3px solid black;
+top-margin:2px;
+}
+
+a{
+    background-color:black;
+    width: 200px;
+    height: 150px;
+    font-size: 50px;
+    color:burlywood;
+    cursor:pointer;
+    font-family: cursive;
+    border: 3px solid burlywood;
+}
+

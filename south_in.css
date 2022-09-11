@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    float: right;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+
+/* Style the header */
+header {
+  background-color:darkviolet;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+h3{
+    border:3px solid black;
+    font-size: 30px;
+
+    color:blueviolet;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background:rgb(240, 162, 215);
+  padding: 20px;
+ 
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  font-family: cursive;
+  background-color:rgb(210, 181, 220);
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:hotpink;
+  padding: 10px;
+  text-align: center;
+  color:black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
